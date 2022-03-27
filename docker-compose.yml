@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  database:
+    image: "postgres"
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: provet
+    volumes:
+      - ./data:/var/lib/postgres
+
+  autentication:
+    image: fabiomattes/provet-authentication:v1
+    ports:
+      - 5140:80
+    links:
+      - database
+
+  clientes:
+    image: fabiomattes/provet-clientes:v1
+    ports:
+      - 5299:80
+    links:
+      - database
