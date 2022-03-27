@@ -1,0 +1,2 @@
+INSERT INTO public."Users" ("Id","Name","Username","Password","CreatedAt","UpdatedAt") VALUES
+	 ('21e21785-af09-444b-b633-0430f230a3b0','Administrador do Sistema','admin','$2a$11$od1VYBBXtxfmW2e1lVBySus59hfeHWqUTwNR1tu2cjAxKPXUg09MG','2022-03-27 15:26:46.567742-03',NULL);
