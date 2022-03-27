@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS public."__EFMigrationsHistory"
 )
 
 TABLESPACE pg_default;
+
 ALTER TABLE IF EXISTS public."__EFMigrationsHistory"
     OWNER to postgres;
 
